@@ -1,0 +1,72 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#carousel {
+width: 600px;
+height: 500px;
+margin: 30px auto;
+position: relative;
+}
+.gallery {
+    height: 100%;
+}
+#carousel img {
+width: 100%;
+height: 100%;
+display: none;
+border-radius: 20px;
+object-fit: cover; 
+}
+#carousel img.active {
+    display: block;
+}
+#carousel .bi {
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: lightskyblue;
+
+}
+#prev {
+    top: 5%;
+    
+}
+#next{
+   bottom: -3%;
+}
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.thumbnails img {
+    width: 100px;
+    height: 70px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+    object-fit: cover; 
+}
+
+.thumbnails img.active {
+    border: 2px solid lightskyblue;
+}
