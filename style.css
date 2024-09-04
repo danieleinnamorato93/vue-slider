@@ -21,6 +21,10 @@ position: relative;
 .gallery {
     height: 100%;
 }
+.gallery h3,p {
+    color: white;
+}
+
 #carousel img {
 width: 100%;
 height: 100%;
@@ -37,7 +41,7 @@ object-fit: cover;
     left: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: lightskyblue;
+    color:white;
 
 }
 #prev {
